@@ -54,3 +54,6 @@ OPTA ADVANCED - Ending IP 109.
 # How is a TCP/IP connection made?
 
 All 4 OPTA's communicate via TCP/IP, where each Ethernet cable is connected to a HUB.
+
+
+The three schedules have already been used for other projects, so some comments are not compatible with the schedule.
