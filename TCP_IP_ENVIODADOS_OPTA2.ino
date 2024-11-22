@@ -222,7 +222,7 @@ void optaAnalogTask(){
   static long int start = millis();
   if (millis() - start > PERIODIC_UPDATE_TIME){
     start = millis();
-      //ENTRADA I1 OPTA SECUNDÁRIO 1
+      //ENTRADA I1 OPTA SECUNDÁRIO 2
       uint16_t sensorValue1 = analogRead(A0);
       uint16_t dac_value1 = map(sensorValue1, 0, 1023, 0, 7490);
       AnalogExpansion exp = OptaController.getExpansion(0);
@@ -234,7 +234,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I2 OPTA SECUNDÁRIO 1
+      //ENTRADA I2 OPTA SECUNDÁRIO 2
       uint16_t sensorValue2 = analogRead(A1);
       uint16_t dac_value2 = map(sensorValue2, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value2) + " on expansion n. " + String(exp.getIndex()));
@@ -245,7 +245,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I3 OPTA SECUNDÁRIO 1
+      //ENTRADA I3 OPTA SECUNDÁRIO 2
       uint16_t sensorValue3 = analogRead(A2);
       uint16_t dac_value3 = map(sensorValue3, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value3) + " on expansion n. " + String(exp.getIndex()));
@@ -256,7 +256,7 @@ void optaAnalogTask(){
       
 
 
-      //ENTRADA I4 OPTA SECUNDÁRIO 1
+      //ENTRADA I4 OPTA SECUNDÁRIO 2
       uint16_t sensorValue4 = analogRead(A3);
       uint16_t dac_value4 = map(sensorValue4, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value4) + " on expansion n. " + String(exp.getIndex()));
@@ -267,7 +267,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I5 OPTA SECUNDÁRIO 1
+      //ENTRADA I5 OPTA SECUNDÁRIO 2
       uint16_t sensorValue5 = analogRead(A4);
       uint16_t dac_value5 = map(sensorValue5, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value5) + " on expansion n. " + String(exp.getIndex()));
@@ -278,7 +278,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I6 OPTA SECUNDÁRIO 1
+      //ENTRADA I6 OPTA SECUNDÁRIO 2
       uint16_t sensorValue6 = analogRead(A5);
       uint16_t dac_value6 = map(sensorValue6, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value6) + " on expansion n. " + String(exp.getIndex()));
@@ -289,7 +289,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I7 OPTA SECUNDÁRIO 1
+      //ENTRADA I7 OPTA SECUNDÁRIO 2
       uint16_t sensorValue7 = analogRead(A6);
       uint16_t dac_value7 = map(sensorValue7, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value7) + " on expansion n. " + String(exp.getIndex()));
@@ -300,7 +300,7 @@ void optaAnalogTask(){
 
 
 
-      //ENTRADA I8 OPTA SECUNDÁRIO 1
+      //ENTRADA I8 OPTA SECUNDÁRIO 2
       uint16_t sensorValue8 = analogRead(A7);
       uint16_t dac_value8 = map(sensorValue8, 0, 1023, 0, 7490);
       Serial.println("Setting DAC value " + String(dac_value8) + " on expansion n. " + String(exp.getIndex()));
